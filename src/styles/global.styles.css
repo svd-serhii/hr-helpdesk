@@ -1,10 +1,30 @@
+@import-normalize; /* bring in normalize.css styles */
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: local('Inter-Regular'), url('../components/fonts/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: local('Inter-Medium'), url('../components/fonts/Inter-Medium.ttf');
+}
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: local('Inter-SemiBold'), url('../components/fonts/Inter-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: local('Inter-Bold'), url('../components/fonts/Inter-Bold.ttf');
+}
+
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Inter-Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.37;
 
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -16,10 +36,9 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-
-@import-normalize; /* bring in normalize.css styles */
 
 *,
 *::before,
